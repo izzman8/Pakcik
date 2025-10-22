@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pakcik TOT's Homepage</title>
+  <link rel="icon" type="image/png" href="tot_logo1.png">
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="countdown.css" />
+  <link href="styleG.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 🔹 Navbar -->
+  <nav>
+    <div class="logo">
+      <img src="tot_logo1.png" alt="Logo" />
+    </div>
+    <div class="menu-btn">
+      <div class="menu-icon">&#9776;</div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="login.php" class="active">Log In</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🔹 Hero Section -->
+  <section class="main">
+    <div class="home-content">
+      <div class="home-img">
+        <img src="tot_logo.png" alt="Hero Image" />
+      </div>
+      <div class="home-text">
+        <h1>Welcome to <span>Website Pakcik</span></h1>
+        <p>Mai tengok apa yang pakcik ada.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Services Section -->
+  <section class="services">
+    <div class="services-heading">
+      <h2>Channel Pakcik</h2>
+      <p>Explore the services we provide with excellence and care.</p>
+    </div>
+
+    <div class="box-container">
+      <div class="box">
+        <img src="tot_logo2.png" alt="Service 1">
+        <font>Trader Orang Tua</font>
+        <p>Channel Pertama Pakcik.</p>
+        <a href="https://t.me/traderorgtua" target="_blank">Visit Channel</a>
+      </div>
+      <div class="box">
+        <img src="pakcik_scalping_logo.png" alt="Service 2">
+        <font>Pakcik Scalping</font>
+        <p>Channel Kedua Pakcik.</p>
+        <a href="https://t.me/PakcikScalping1000Pips" target="_blank">Visit Channel</a>
+      </div>
+      <div class="box">
+        <img src="pakcik_pengkaji_candle_BLACK.png" alt="Service 3">
+        <font>Pakcik Pengkaji Candle</font>
+        <p>Channel Ketiga Pakcik.</p>
+        <a href="https://t.me/educationpakcik" target="_blank">Visit Channel</a>
+      </div>
+      <div class="box">
+        <img src="pakcik_indicator_logo.png" height="100px" alt="Service 4">
+        <font>Pakcik IndicaTOT</font>
+        <p>Channel Keempat Pakcik.</p>
+        <a href="https://t.me/PakcikIndicatot" target="_blank">Visit Channel</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Countdown Row (Images + Countdown Center) -->
+  <div class="countdown-row">
+    <!-- Left image -->
+    <div class="side-image">
+      <img src="ads2.jpg" alt="Left Image">
+    </div>
+
+    <!-- Countdown in the center -->
+    <div class="countdown-center">
+      <div class="container">
+        <div class="particles" id="particles"></div>
+        <button class="accessibility-toggle" id="accessibilityToggle" aria-label="Toggle high contrast mode"></button>
+        <div class="ribbon">
+          <span class="ribbon-content">🔥 Limited free 🔥</span>
+        </div>
+        <div class="logo">Pakcik Trading Combo<span class="logo-dot"></span></div>
+        <h1>Special Free Items awaits – Ends Soon!</h1>
+        <p>Grab your exclusive trading tools now before the offer expires.</p>
+
+        <div class="countdown-container" id="countdown">
+          <div class="countdown-item">
+            <div class="countdown-digit" id="days">00</div>
+            <div class="countdown-label">Days</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-item">
+            <div class="countdown-digit" id="hours">00</div>
+            <div class="countdown-label">Hours</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-item">
+            <div class="countdown-digit accent-digit" id="minutes">00</div>
+            <div class="countdown-label">Minutes</div>
+          </div>
+          <div class="countdown-separator">:</div>
+          <div class="countdown-item">
+            <div class="countdown-digit" id="seconds">00</div>
+            <div class="countdown-label">Seconds</div>
+          </div>
+        </div>
+
+        <div class="free-item">
+          <div class="free-item-container">
+            <div class="video-container">
+              <video autoplay muted loop playsinline>
+                <source src="indicatot.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="free-item-details">
+              <h2>Free Indicators</h2>
+              <p>Specially designed indicators to enhance your trading experience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="free-item">
+          <div class="free-item-container">
+            <div class="free-item-details">
+              <h2>Free E-books</h2>
+              <p>Comprehensive guides to help you master trading strategies.</p>
+            </div>
+            <div class="video-container">
+              <video autoplay muted loop playsinline>
+                <source src="Ebook.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+        <div class="free-item">
+          <div class="free-item-container">
+            <div class="video-container">
+              <video autoplay muted loop playsinline>
+                <source src="Evideo.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="free-item-details">
+              <h2>Free E-video</h2>
+              <p>Exclusive video tutorials to boost your trading skills.</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Right image -->
+    <div class="side-image">
+      <img src="ads3.jpg" alt="Right Image">
+    </div>
+  </div>
+
+  <div class="feedback-wrapper">
+    <h2>
+      Kami telah membantu lebih <span class="highlight">2000 trader</span> jom tengok apa kata mereka
+    </h2>
+
+    <div class="video-grid">
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/YZ6zykTfvGo"
+                title="Kelebihan Belajar Ilmu Follow Arah 1"
+                allowfullscreen></iframe>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/9PHl96a7VrY"
+                title="Kelebihan Belajar Ilmu Follow Arah 2"
+                allowfullscreen></iframe>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/Q_rCY37QEcY"
+                title="Kelebihan Belajar Ilmu Follow Arah 3"
+                allowfullscreen></iframe>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/n3Of0OBTJEI"
+                title="Kelebihan Belajar Ilmu Follow Arah 3"
+                allowfullscreen></iframe>
+      </div>
+
+      <div class="video-card">
+        <iframe src="https://www.youtube.com/embed/h_nBYG9Cics"
+                title="Kelebihan Belajar Ilmu Follow Arah 3"
+                allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="testimonial-wrapper">
+
+    <!-- Title -->
+    <div class="testimonial-header">
+      <h2><span class="purple">MASIH RAGU-RAGU</span> JOM TENGOK TESTIMONI KAMI.</h2>
+      <p>Ramai dah kami bantu. Memang happening group telegram kami tau...</p>
+    </div>
+
+    <!-- Testimonial Slider -->
+<div class="swiper testimonial-slider">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <div class="testimonial-slide">
+        <div class="user-info">
+          <img src="https://via.placeholder.com/80" alt="user">
+          <div>
+            <h4>Brader 🥇GOLD XAUUSD🥇</h4>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <p>“Teknik setup MC ni ajar kita sabar ikut SOP, tunggu setup baru N3—tak kalut. Lepas faham, saya rasa bangga ada satu perubahan dalam diri.”</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="testimonial-slide">
+        <div class="user-info">
+          <img src="https://via.placeholder.com/80" alt="user">
+          <div>
+            <h4>Trader A 🥇GOLD XAUUSD🥇</h4>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <p>“Dulu selalu MC, sekarang dah faham struktur market. Terima kasih Pakcik!”</p>
+      </div>
+    </div>
+
+    <div class="swiper-slide">
+      <div class="testimonial-slide">
+        <div class="user-info">
+          <img src="https://via.placeholder.com/80" alt="user">
+          <div>
+            <h4>Trader B 🥇GOLD XAUUSD🥇</h4>
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+        <p>“Group support memang terbaik, banyak sharing dan live setup setiap hari.”</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Pagination -->
+  <div class="swiper-pagination"></div>
+</div>
+
+
+    <!-- Image Gallery -->
+    <div class="feedback-gallery">
+      <div class="gallery-item"><img src="feedback1.jpg" alt="feedback"></div>
+      <div class="gallery-item"><img src="feedback8.jpg" alt="feedback"></div>
+      <div class="gallery-item"><img src="feedback3.jpg" alt="feedback"></div>
+      <div class="gallery-item"><img src="feedback4.jpg" alt="feedback"></div>
+      <div class="gallery-item"><img src="feedback5.jpg" alt="feedback"></div>
+      <div class="gallery-item"><img src="feedback6.jpg" alt="feedback"></div>
+      <div class="gallery-item"><img src="feedback7.jpg" alt="feedback"></div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+<script>
+const swiper = new Swiper(".testimonial-slider", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  speed: 800,
+});
+</script>
+
+
+
+
+  <!-- 🔹 Counter Section -->
+  <div class="counters">
+    <div>
+      <div class="counter">
+        <h1>9<span data-count="273">0</span></h1>
+        <h3>Student</h3>
+      </div>
+      <div class="counter">
+        <h1>3<span data-count="238">0</span>+</h1>
+        <h3>Graduate Students</h3>
+      </div>
+      <div class="counter">
+        <h1><span data-count="96">0</span>%</h1>
+        <h3>Success Rate</h3>
+      </div>
+      <div class="counter">
+        <h1><span data-count="10">0</span>+</h1>
+        <h3>Years Experience</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🔹 Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Book your next class right now</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Country" required name="Country">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+
+  <!-- 🔹 About Section -->
+  <section class="about">
+    <div class="about-content">
+      <div class="about-img">
+        <img src="tot_logo1.png" alt="About Image">
+      </div>
+      <div class="about-text">
+        <h1>About <span>Pakcik</span></h1>
+        <a href="#" class="about-login">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Scripts -->
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const countDownDate = new Date("Nov 01, 2025 23:59:59").getTime();
+      function updateCountdown() {
+          const now = new Date().getTime();
+          const distance = countDownDate - now;
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("days").textContent = days.toString().padStart(2, '0');
+          document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
+          document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
+          document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
+
+          if (distance < 0) {
+              document.getElementById("days").textContent = "00";
+              document.getElementById("hours").textContent = "00";
+              document.getElementById("minutes").textContent = "00";
+              document.getElementById("seconds").textContent = "00";
+          }
+      }
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+  });
+  </script>
+
+  <script>
+  const counters = document.querySelectorAll('.counter span');
+  const container = document.querySelector('.counters');
+  let activated = false;
+  window.addEventListener('scroll', () => {
+    if (pageYOffset > container.offsetTop - container.offsetHeight - 200 && activated === false) {
+      counters.forEach(counter => {
+        counter.innerText = '0';
+        let count = 0;
+        function updateCount() {
+          const target = parseInt(counter.dataset.count);
+          if (count < target) {
+            count++;
+            counter.innerText = count;
+            setTimeout(updateCount, 10);
+          } else {
+            counter.innerText = target;
+          }
+        }
+        updateCount();
+        activated = true;
+      });
+    } else if (
+      pageYOffset < container.offsetTop - container.offsetHeight - 500 ||
+      (pageYOffset === 0 && activated === true)
+    ) {
+      counters.forEach(counter => counter.innerText = '0');
+      activated = false;
+    }
+  });
+  </script>
+
+</body>
+
+<footer>
+  <p>&copy; <?php echo date("Y"); ?> Pakcik TOT. All rights reserved.</p>
+</footer>
+
+</html>
