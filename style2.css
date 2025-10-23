@@ -214,7 +214,7 @@ nav ul li a:hover {
 
 .services-heading h2 {
   font-size: 2rem;
-  color: #22252e;
+  color: #c4c4c4;
 }
 
 .services-heading p {
@@ -545,6 +545,7 @@ footer {
 .testimonial-header h2 {
   font-size: 1.8rem;
   font-weight: 700;
+  color: #cfcfcf;
 }
 
 .testimonial-header .purple {
