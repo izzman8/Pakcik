@@ -748,3 +748,104 @@ footer {
     height: 160px;
   }
 }
+
+/* --- Hero Section (Landing Page Style) --- */
+.hero {
+  margin-top: 80px;
+  text-align: center;
+  background: #fff;
+  padding-bottom: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-top {
+  background: #ff0000;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 10px 20px;
+}
+
+.hero-top .highlight {
+  color: #fff900;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 60px 40px;
+  background-image: url('grid-bg.png'); /* optional */
+  background-size: cover;
+}
+
+.hero-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 2.2rem;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #000;
+}
+
+.hero-text mark {
+  background: #fff900;
+  color: #000;
+  padding: 0 4px;
+  font-weight: 700;
+}
+
+.hero-subtext {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 30px;
+  background: #ff0000;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.cta-btn:hover {
+  background: #b30000;
+}
+
+.hero-image img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-image img {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}
