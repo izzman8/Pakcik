@@ -753,7 +753,6 @@ footer {
 .hero {
   margin-top: 80px;
   text-align: center;
-  background: #fff;
   padding-bottom: 60px;
   position: relative;
   overflow: hidden;
@@ -777,8 +776,11 @@ footer {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 60px 40px;
-  background-image: url('grid-bg.png'); /* optional */
+  background-image: url('bg1.png'); /* optional */
   background-size: cover;
+  background-position: center;   /* Keep image centered */
+  background-repeat: no-repeat;  /* Don’t repeat */
+  height: 100vh;
 }
 
 .hero-text {
@@ -790,7 +792,7 @@ footer {
   font-size: 2.2rem;
   line-height: 1.5;
   font-weight: 700;
-  color: #000;
+  color: #f0f0f0
 }
 
 .hero-text mark {
@@ -803,7 +805,7 @@ footer {
 .hero-subtext {
   margin-top: 20px;
   font-size: 1rem;
-  color: #333;
+  color: #f0f0f0
 }
 
 .cta-btn {
