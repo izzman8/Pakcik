@@ -768,7 +768,7 @@ footer {
 }
 
 .hero-top .highlight {
-  color: red;
+  color: #fff900;
 }
 
 .hero-content {
@@ -794,7 +794,7 @@ footer {
 }
 
 .hero-text mark {
-  background: red;
+  background: #fff900;
   color: #000;
   padding: 0 4px;
   font-weight: 700;
