@@ -456,30 +456,43 @@ footer {
   right: -1em;
 }
 
+/* Find this block in your style2.css and replace it: */
 @media screen and (max-width: 900px) and (min-width: 501px) {
-  .counters > div {
-    grid-template-columns: 1fr 1fr;
-  }
-  .counter:nth-child(2)::before{
-    display: none;
-  }
+  .counters > div {
+    grid-template-columns: repeat(4, 1fr) !important;
+    
+  
+    min-width: 700px; 
+    overflow-x: auto; 
+    padding-bottom: 20px;
+  }
+  .counter:nth-child(2)::before{
+   
+  display: none;
+  }
 }
 
+/* Find this block in your style2.css and replace it: */
 @media screen and (max-width: 500px){
-  .counters > div {
-    grid-template-columns: 1fr;
-    row-gap: 5em;
-  }
-  .counter:not(:last-child)::before{
-    width: 90%;
-    height: 2px;
-    top: initial;
-    right: initial;
-    bottom: -3em;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  .counters > div {
+    grid-template-columns: repeat(4, 1fr) !important;
+    min-width: 700px; 
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+    padding-bottom: 20px; /* Space for the scrollbar */
+    row-gap: 5em;
+  }
+  .counter:not(:last-child)::before{
+    width: 90%;
+    height: 2px;
+    top: initial;
+    right: initial;
+    bottom: -3em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
+
+
 
 .free-item{
   padding: 0;
@@ -852,4 +865,125 @@ footer {
     width: 300px;
     margin-bottom: 20px;
   }
+}
+
+/* --- Countdown Row Layout (Desktop) --- */
+.countdown-row {
+  display: flex; /* Activate Flexbox for the three-column layout */
+  justify-content: center;
+  align-items: flex-start; /* Align elements to the top */
+  width: 100%; /* Ensure it does not exceed viewport width */
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.side-image {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.side-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.countdown-center {
+  flex-grow: 1; /* Allows the center content to take up available space */
+  max-width: 700px; /* Maximum content width for readability on wide screens */
+  margin: 0 20px;
+}
+
+.countdown-center .container {
+  width: 100%;
+}
+
+
+/* --- Mobile View Fix (@media) --- */
+@media (max-width: 768px) {
+  /* 1. Stack the columns vertically and remove side images */
+  .countdown-row {
+    flex-direction: column; /* Stacks the side-image and countdown-center elements */
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+
+  /* Hiding decorative side images is the most common and effective way to fix overflow */
+  .side-image {
+    display: none;
+  }
+
+  /* Ensure center content uses full available mobile width */
+  .countdown-center {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  /* 2. Fix the nested "free item" rows */
+  .free-item-container {
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .free-item-details {
+    /* Add some space above the text when stacked */
+    margin-top: 10px; 
+  }
+
+  /* 3. Ensure the main body itself cannot overflow */
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* From Uiverse.io by cssbuttons-io */ 
+.btn {
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1em 2.5em;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: #f0f0f0;
+}
+
+.btn:hover {
+  background-color: #ff1e1e;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
 }
