@@ -86,7 +86,6 @@
             font-weight: 800;
             margin-bottom: 16px;
             line-height: 1.3;
-            color: #0f0f0f;
         }
 
         p {
@@ -464,6 +463,7 @@
   }
 
   .side-image img {
-    max-width: 80%;
+    max-width: 100%;
   }
 }
+
